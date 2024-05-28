@@ -1,0 +1,44 @@
+### FORMAT
+
+KEY        |   VALUE 
+-------------------------
+random key | random value
+etc key    | etc value
+
+
+
+### OPERATIONS
+
+--- SET
+    This should add a value not update them!!!!
+    Example:
+        set(key, value)
+        set(key, value) // again??????
+        > ERROR key already exists!!!!!!!!!!!!!!
+
+--- update
+    This can only update values not create them
+    Example:
+        update(key, value)
+        update(key, newValue) // this is fine!!!! no good!!! 
+
+--- delete
+    This can only delete values not create them
+    Example:
+        delete(key)
+        delete(key) // this is fine!!!! no good!!! 
+        delete(unknownKey) // bad!!!!
+        > ERROR key does not exist!!!!!!!!!!!!!!
+
+
+-- get
+    This should return the value of the key
+    Example:
+        get(key)
+        get(key) // this is fine!!!! no good!!! 
+        get(unknownKey) // bad!!!!
+        > ERROR key does not exist!!!!!!!!!!!!!!
+
+
+
+
